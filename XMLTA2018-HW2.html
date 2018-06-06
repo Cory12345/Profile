@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style type="text/css">
+    body {
+            background-image: url();
+            background-repeat: no-repeat;
+            background-position:center top;
+            background-size:cover;
+            background-attachment: fixed;
+            color:#fff;
+         }
+
+        a{
+            color:#fff;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:#f9ffc1;
+        }
+
+        .wrapper {
+            width: 1024px;
+            margin: 0 auto;
+        }
+        .block {
+            width: 1024px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        #menu{
+            margin-top:30px;
+            margin-bottom:10px;
+            background-color: rgba(0,0,0,0);
+        }
+
+        #menu nav ul{
+            margin:0;
+            padding-left:0px;
+        }
+        #menu nav ul li{
+            display: inline-block;
+        }
+
+        #menu nav ul li.active a{
+            color:#fcef98;
+        }
+
+        #close{
+            margin-bottom: 0px;
+        }
+
+        #main{
+            margin-top:20px;
+        }
+
+        .box{
+            background-color: rgba(0,0,0, .6);
+            padding:20px;
+        }
+
+        .index_info{
+            text-align:center;
+        }
+        .index_info h1{
+            font-size:36pt;
+        }
+
+        .box .video{
+            margin-bottom:60px;
+        }
+
+        .personal{
+            margin-bottom: 50px;
+        }
+
+        .left{
+            float: left;
+        }
+        .photo{
+            width: 160px;
+        }
+        .photo img{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .gammer_info{
+            width:804px;
+            padding-left:20px;
+        }
+        .gammer_info p{
+            font-size: 18px;
+        }
+        .gammer_info p.name_id{
+            margin-top:0px;
+            font-size: 25px;
+        }
+
+        .gammer_info nav ul{
+            margin:0;
+            padding-left:0px;
+        }
+        .gammer_info nav ul li{
+            display: inline-block;
+        }
+        .gammer_info nav ul li a{
+            display: block;
+            padding-right:20px;
+        }
+        .gammer_info nav ul li a img{
+            vertical-align: middle;
+        }
+
+        /* clearfix 解決用到float時可能發生的意外情況 */
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+    </style>
+    <title>首頁</title>
+    <meta name="description" content="台灣大學資訊工程研究所碩士班甄試就學計畫">
+    <meta name="author" content="XXX">
+     <!--<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+		    <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+  </head>
+
+  <body>
+    <div id="menu">
+    	<div class="wrapper">
+    		<nav>
+    			<ul>
+    				<li><a href="#履歷表" target="_blank">履歷表</a></li>
+    				<li><a href="#自傳" target="_blank">自傳</a></li>
+    				<li><a href="#未來規劃" target="_blank">未來規劃</a></li>
+    				<li><a href="#歷年修課成果" target="_blank">歷年修課成果</a></li>
+    				<li><a href="#自我SWOT分析" target="_blank">自我SWOT分析</a></li>
+    				<li><a href="#學業成績" target="_blank">學業成績</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    </div>
+    <div id="履歷表">
+        <div class="content wrapper">
+                <div class="col s10 offset-s1  blue darken-1 ">
+                    <h5 class="center-align " style="margin-bottom: 0px"><font size="5">履歷表</font></h5>
+                </div>
+                <div class="col s10 offset-s1  blue lighten-2 ">
+                    <h5 class="center-align" style="margin-bottom: 0px">基本資料表</h5>
+                </div>
+                <div class="col s10 offset-s1" style="padding: 0px;">
+                    <table class="table table-bordered" style="margin: 0px;">
+                      <tbody>
+                        <tr>
+                            <td class="grey lighten-4">姓名</td>
+                            <td>王小明</td>
+                            <td rowspan=5 align="center" valign="center" style="width: 312px"><img src="images/封面.jpg" width="300" /></td>
+                        </tr>
+                        <tr>
+                            <td class="grey lighten-4">姓別</td>
+                            <td>男</td>
+                        </tr>
+                        <tr>
+                            <td class="grey lighten-4">聯絡電話</td>
+                            <td>09720000000</td>
+                        </tr>
+                        <tr>
+                            <td class="grey lighten-4">通訊地址 </td>
+                            <td>台南市 XX 路 X 段 XX 號 X 樓之 X</td>
+                        </tr>
+                        <tr>
+                            <td class="grey lighten-4">E - Mail</td>
+                            <td>ZXXXXXXX@gmail.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="col s10 offset-s1  blue lighten-2 ">
+                    <h5 class="center-align" style="margin-bottom: 0px">學歷</h5>
+                </div>
+                <div class="col s10 offset-s1" style="padding: 0px;">
+                    <table class="table table-bordered" style="margin: 0px;">
+                      <tbody>
+                        <tr>
+                            <td class="grey lighten-4">學校</td>
+                            <td class="grey lighten-4">科系所</td>
+                            <td class="grey lighten-4">修業年限</td>
+                            <td class="grey lighten-4">肄業／畢業</td>
+                        </tr>
+                        <tr>
+                            <td>清華大學</td>
+                            <td>資工系</td>
+                            <td>2010 – 2013</td>
+                            <td>肄業</td>
+                        </tr>
+                        <tr>
+                            <td>臺南一中</td>
+                            <td>普通科</td>
+                            <td>2005 – 2007</td>
+                            <td>畢業</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="col s10 offset-s1  blue lighten-2 ">
+                    <h5 class="center-align" style="margin-bottom: 0px">專長</h5>
+                </div>
+                <div class="col s10 offset-s1" style="padding: 0px;">
+                    <table class="table table-bordered" style="margin: 0px;">
+                      <tbody>
+                        <tr>
+                            <td class="grey lighten-4">項目</td>
+                            <td class="grey lighten-4">備註</td>
+                        </tr>
+                        <tr>
+                            <td>語言種類</td>
+                            <td>C , C++ , Java , OpenGL , Javascript , Unity , Python</td>
+                        </tr>
+                        <tr>
+                            <td>應用程式開發</td>
+                            <td>Android App、Windows 應用程式、網頁程式</td>
+                        </tr>
+                        <tr>
+                            <td>3D 模型設計</td>
+                            <td>3DS Max、Sketchup（中華電信 3D 模型設計人才認證）</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="col s10 offset-s1  blue lighten-2 ">
+                    <h5 class="center-align" style="margin-bottom: 0px">學業經歷</h5>
+                </div>
+                <div class="col s10 offset-s1" style="padding: 0px;">
+                    <table class="table table-bordered" style="margin: 0px;">
+                      <tbody>
+                        <tr>
+                            <td class="grey lighten-4">時間</td>
+                            <td class="grey lighten-4">內容</td>
+                        </tr>
+                        <tr>
+                            <td>2014</td>
+                            <td>獲選全國大專優秀青年全國代表（全校一名）</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>連續七學期獲書卷獎（累計系排名第一）</td>
+                        <tr>
+                            <td>2013</td>
+                            <td>獲財團法人林熊徵學田基金會獎學金（全國 50 名）</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>獲朱順一合勤獎學金（全系兩名）</td>
+                        <tr>
+                            <td>2013</td>
+                            <td>獲通訊大賽智慧終端實作組季軍，為校爭光，其中擔任隊長一職</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>獲創新應用大賽行動 APP 校園組優選，為校爭光，其中擔任隊長一職</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>獲清華大學資工系大學部最佳專題展優勝，其中擔任隊長一職</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>獲清華大學寫作中心世界糧食日科普主題寫作競賽最高獎項優選獎</td>
+                        <tr>
+                            <td>2013</td>
+                            <td>擔任電資院兩岸暑期交流「Java 程序設計與訓練」課程助教</td>
+                        </tr>
+                         <tr>
+                            <td>2012</td>
+                            <td>獲選台灣清華代表團團員，赴北京清華交換修習「程序設計訓練」獲滿分</td>
+                        <tr>
+                            <td>2012</td>
+                            <td>通識課創立校園媒體「清華異人堂」</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="col s10 offset-s1  blue lighten-2 ">
+                    <h5 class="center-align" style="margin-bottom: 0px">課外經歷</h5>
+                </div>
+                <div class="col s10 offset-s1" style="padding: 0px;">
+                    <table class="table table-bordered" style="margin: 0px;">
+                      <tbody>
+                        <tr>
+                            <td class="grey lighten-4">時間</td>
+                            <td class="grey lighten-4">內容</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>擔任畢業生聯誼會會長，帶領團隊為在校畢業生籌畫各類畢業季活動</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>擔任清華大學坦尚尼亞教育志工團文書</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>參與國際志工基礎訓練營結業並經考評合格</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>發起清大資工兒童電腦邏輯一日營並擔任營長，服務新竹市區國小學童</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>擔任弦樂社社長，帶領社團為校舉辦多場跨社跨校大型音樂會</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>擔任新生盃男子排球項目隊長，帶領系上排球隊獲冠軍</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+    </div>
+    <div class="block">
+    </div>
+    <div id="自傳" class="content wrapper">
+        <div class="col s10 offset-s1  blue darken-1 ">
+            <h5 class="center-align " style="margin-bottom: 0px"><font size="5">自傳</font></h5>
+        </div>
+        <div class="col s10 offset-s1  blue lighten-2 ">
+            <h5 class="center-align" style="margin-bottom: 0px">個人特質</h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+              <tbody>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我來自台南，於安穩家庭成長，父母管教方式開明自由，使我<b>擁有獨立和靈活思
+                        考的能力</b>。我是一個<b>活潑樂觀、善於觀察人性的人</b>，興趣是完善自我及人脈經營，擅
+                        長排球、桌球，平時有閱讀與旅遊的嗜好，本身學習小提琴十餘年。
+                        <br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>統合和執行能力強，常擔任團隊領導人</b>，凡事全力以赴為我待人處事的原則，<b>全
+                        心投入事情中直到完臻更是我做研究的精神</b>。貴校的學術風氣及地位是我一心嚮往的
+                        目標，因此我相當渴求能有機會進入這個學術殿堂接受更進一步的專業知識訓練。
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="col s10 offset-s1  blue lighten-2 ">
+            <h5 class="center-align" style="margin-bottom: 0px">學業經歷</h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+              <tbody>
+                <tr>
+                 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    目前就讀於資工系四年級。學業上我從不放過任何學習機會，將報告討論和專題
+                    實作達到盡善盡美，抱持著積極正向的態度，享受與人合作解決問題的同舟共濟。
+                    <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;從大一起<b>連續獲得七學期的書卷獎（累計系排名第一）、財團法人林熊徵學
+                    田基金會獎學金（全國 50 名）</b>和<b>朱順一合勤獎學金（全系兩名）</b>，除獲得學術榮耀，
+                    也肯定了我的能力及態度。積極參與課外活動為學校、社會貢獻更讓我於大四時<b>獲選
+                    為全國大專優秀青年全國代表（全校一名）</b>。系上專題選擇李潤容教授作為指導教授
+                    並擔任團隊領導，率隊獲得<b>通訊大賽智慧終端實作組季軍、創新應用大賽行動 APP 校
+                    園組優選、清大資工大學部最佳專題展優勝</b>。與志同道合的夥伴組隊投稿參選寫作中
+                    心世界糧食日科普主題寫作競賽，獲最高獎項優選獎。
+                    <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    同時也積極尋求校外增廣見聞的機會，2012 暑期獲選為「<b>海峽兩岸首屆科技菁英
+                    論壇 - 台灣清華代表團<b>」一員，赴北京清華大學<b>交換修習「程序設計訓練」獲滿分</b>，
+                    並於隔年擔任此代表團的台灣課程助教。通識課程「新聞媒體企劃」<b>創立校園媒體「清
+                    華異人堂</b>」並擔任<b>總編輯兼創意總監</b>，任內管理團隊運作企劃和建構官方網站，帶領
+                    隊伍奪得<b>最佳人氣組別及最高分組別</b>。
+                    課外經
+                 </td> 
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="col s10 offset-s1  blue lighten-2 ">
+            <h5 class="center-align" style="margin-bottom: 0px">課外經歷</h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+              <tbody>
+                <tr>
+                 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    學業之外充分利用時間從事豐富的課外活動，大四時<b>擔任畢業生聯誼會會長</b>，帶
+                    領團隊為在校畢業生籌畫各類畢業季活動。<b>參加清華大學坦尚尼亞教育志工團，擔任
+                    團隊文書</b>，赴遙遠國度服務，改善當地人的未來，也訓練自我如何接受陌生環境的挑
+                    戰。大二時<b>擔任弦樂社社長</b>，帶領社團分別與新竹教育大學音樂系、清華樂集、清大
+                    合唱團、清大管樂社合作舉辦過三場大型音樂會。<b>號召同儕發起清大資工兒童電腦邏
+                    輯一日營並擔任營長</b>，服務新竹市區國小學童，提升學校對外形象。平時參與系上排
+                    球隊的練習，並<b>擔任男排隊長帶領隊伍獲得新生盃冠軍</b>。參與系上活動擔任迎新營活
+                    動股長，專司三天營隊活動內容企劃。為了增進語文能力和開拓的視野，2009 暑期曾
+                    隻身前往美國加州大學 Davis 分校參加「Intensive English」課程，經營了不同國家的人
+                    脈，也磨練陌生環境的適應力。
+                    <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     諸多的課外嘗試<b>並未影響學業成績，有效地分配利用時間和戮力以赴</b>讓我得以兼
+                    顧，更鍛鍊了<b>與人溝通協調和時間規劃的能力</b>。多采多姿的活動不但增進琴藝、強化
+                    體能，也<b>培養出團隊合作和領導的能力</b>。同時更加祈望能將課裡課外一切所學的知識
+                    與能力運用在未來的研究領域，期許自我對新的學術環境有所貢獻。
+                 </td> 
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="col s10 offset-s1  blue lighten-2 ">
+            <h5 class="center-align" style="margin-bottom: 0px">結語</h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+              <tbody>
+                <tr>
+                 <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    我對於人生未來目標明確瞭解，<b>一直很清楚自己希望獲得什麼、要什麼</b>，積極尋
+                     求機會表現和不斷的學習使我能持續精進自我能力。
+                    <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    活潑樂觀讓我<b>面臨挑戰時有足夠的抗壓性</b>；靈活的思考更能<b>細膩的分析問題，凡
+                     事展現企圖心和行動力做到最好是我所堅持的信念</b>。最後非常感謝教授委員閱讀這一
+                     篇文章，以上是我的能力、我的態度及我的人生，希望能博取各位教授委員的認同，
+                     順利獲得貴校肯定。
+                 </td> 
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="block">
+    </div>
+    <div id="未來規劃" class="content wrapper">
+        <div class="col s10 offset-s1  blue darken-1 ">
+            <h5 class="center-align " style="margin-bottom: 0px"><font size="5">未來規劃</font></h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+              <tbody>
+                <tr>
+                    <td class="blue lighten-2">時段</td>
+                    <td class="blue lighten-2">排程</td>
+                    <td class="blue lighten-2">目的</td>
+                </tr>
+                <tr>
+                    <td rowspan=4 class="grey lighten-4 text-center align-middle">入學前</td>
+                    <td>修習更多系上課程</td>
+                    <td>加強自身領域的專業知識及廣度</td>
+                </tr>
+                <tr>
+                    <td>參加系上／校外專題展比賽</td>
+                    <td>增強實戰統合經驗及行銷能力</td>
+                </tr>
+                <tr>
+                    <td>爭取企業實習機會</td>
+                    <td>了解公司運作體系，增加工作經驗</td>
+                </tr>
+                <tr>
+                    <td>參加國際志工 </td>
+                    <td>投身志工行列，訓練英文實戰能力</td>
+                </tr>
+                <tr>
+                    <td rowspan=5 class="grey lighten-4 text-center align-middle">碩一上</td>
+                    <td>接觸研究 HCI & Graphic </td>
+                    <td>加深對感興趣領域的了解和知識</td>
+                </tr>
+                <tr>
+                    <td>廣閱相關論文，與指導教授討論</td>
+                    <td>盡快確立研究主題和方向</td>
+                </tr>
+                <tr>
+                    <td>修習專業基礎知識</td>
+                    <td>多方涉略，尋找感興趣的研究主題</td>
+                </tr>
+                <tr>
+                    <td>參與產學合作計畫 </td>
+                    <td>接觸業界計劃，訓練解決問題能力</td>
+                </tr>
+                <tr>
+                    <td>持續增進英文能力  </td>
+                    <td>為將來出國的可能性準備</td>
+                </tr>
+                <tr>
+                    <td rowspan=4 class="grey lighten-4 text-center align-middle">碩一下</td>
+                    <td>初步決定研究題目 </td>
+                    <td>及早開始準備，拉長研究時間</td>
+                </tr>
+                <tr>
+                    <td>報考 TOEFL 或 TOEIC</td>
+                    <td>語文能力文憑，出國持續進修門票</td>
+                </tr>
+                <tr>
+                    <td>預備撰寫碩士論文</td>
+                    <td>初步設計雛型版型以利往後發展</td>
+                </tr>
+                <tr>
+                    <td>擔任教學助教 </td>
+                    <td>接觸教學領域</td>
+                </tr>
+                <tr>
+                    <td rowspan=3 class="grey lighten-4 text-center align-middle">碩二上</td>
+                    <td>專注論文研究 </td>
+                    <td>專心撰寫論文，展現學習成果</td>
+                </tr>
+                <tr>
+                    <td>參與產學合作計畫</td>
+                    <td>接觸業界計劃，累積創業資本</td>
+                </tr>
+                <tr>
+                    <td>碩士論文初版</td>
+                    <td>預留時間空間修改增進</td>
+                </tr>
+                <tr>
+                    <td rowspan=2 class="grey lighten-4 text-center align-middle">碩二下</td>
+                    <td>碩士論文終版 </td>
+                    <td>達成研究里程碑</td>
+                </tr>
+                <tr>
+                    <td>抉擇並準備未來</td>
+                    <td>接累計足夠實力與視野，謀定而後動</td>
+                </tr>
+                <tr>
+                    <td rowspan=6 class="grey lighten-4 text-center align-middle">畢業後</td>
+                    <td>考量國內攻讀博士 </td>
+                    <td>留讀 NTU</td>
+                </tr>
+                <tr>
+                    <td>考量出國進修</td>
+                    <td>申請 MIT</td>
+                </tr>
+                 <tr>
+                    <td>考量合夥創業 </td>
+                    <td>朝生醫電子領域發展</td>
+                </tr>
+                 <tr>
+                    <td>考量國內職場</td>
+                    <td>軟體公司、外商公司</td>
+                </tr>
+                 <tr>
+                    <td>考量國外電影業</td>
+                    <td>Pixar、Legendary</td>
+                </tr>
+                 <tr>
+                    <td>考量國外遊戲業</td>
+                    <td>Blizzard、SEGA</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="block">
+    </div>
+    <div id="歷年修課成果" class="content wrapper">
+        <div class="col s10 offset-s1  blue darken-1 ">
+            <h5 class="center-align " style="margin-bottom: 0px"><font size="5">歷年修課成果</font></h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+                  <tbody>
+                    <tr>
+                        <td class="blue lighten-2">科目</td>
+                        <td class="blue lighten-2">期末專題作品</td>
+                    </tr>
+                    <tr>
+                        <td>計算機程式設計</td>
+                        <td>「The Frogs」以 C 開發，控制青蛙過河，電腦具 AI。</td>
+                    </tr>
+                    <tr>
+                        <td>軟體實驗</td>
+                        <td>「House Claws」是一款 2DAndroid Game，以手勢控制貓咪閃躲障礙物前進。</td>
+                    </tr>
+                    <tr>
+                        <td>硬體實驗</td>
+                        <td>「Death Rush」是用 VHDL 開發的生存遊戲，控制主角閃避敵襲，燒在 FPGA ( Board:EVS6 )上。</td>
+                    </tr>
+                    <tr>
+                        <td>3D 建模設計</td>
+                        <td>「Angry Birds Volleyball」是由 3ds Max 製作的 3D 影片。( ppt.cc/H9z1 )</td>
+                    </tr>
+                    <tr>
+                        <td>多媒體技術概論</td>
+                        <td>實作「Non-Local MeansDenoising」去除雜訊還原影像，並與其他方法比較。</td>
+                    </tr>
+                    <tr>
+                        <td>Web 程式設計</td>
+                        <td>「Cat Slime」是款 RPG 遊戲，用 Javascript、CSS、HTML開發，具流暢華麗的打鬥體驗。( ppt.cc/xRER )</td>
+                    </tr>
+                    <tr>
+                        <td>嵌入式繪圖程式設計</td>
+                        <td>「Model Flow」是一個讓使用者能輕鬆觀看 3D 模型的精致瀏覽程式。</td>
+                    </tr>
+                    <tr>
+                        <td>畢業專題</td>
+                        <td>「「Fixit – Boo’s MuseumAdventure」是我們專題團隊「J & P」開發的 AndroidApp。</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="block">
+    </div>
+    <div id="自我SWOT分析" class="content wrapper">
+        <div class="col s10 offset-s1  blue darken-1 ">
+            <h5 class="center-align " style="margin-bottom: 0px"><font size="5">自我SWOT分析</font></h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+                <tbody>
+                    <tr>
+                        <td class="blue lighten-2"><font size="5">優勢</font></td>
+                        <td class="blue lighten-2"><font size="5">劣勢</font></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font size="3">
+                            1. 專業能力優異<br>                     
+                            2. 積極正向的態度且抗壓性強<br>
+                            3. 人際關係良好<br>
+                            4. 團隊合作和領導能力強<br>
+                            5. 善於時間規劃，有前瞻力<br>
+                            6. 心思細膩，善於察言觀色<br>
+                            </font>
+                        </td>
+                        <td>
+                            <font size="3">
+                            1. 自我要求過高<br>
+                            2. 有未完成任務時易焦慮<br>
+                            3. 下放任務不放心<br>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blue lighten-2"><font size="5">機會</font></td>
+                        <td class="blue lighten-2"><font size="5">威脅</font></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font size="3">
+                           1. 碩士推甄重視在校成績<br>
+                           2. 擔任團隊領導經驗豐富<br>
+                           3. 擁有國外進修經驗<br>
+                           4. 積極爭取學習機會<br>
+                            </font>
+                        </td>
+                        <td>
+                            <font size="3">
+                            1. 熱門科系競爭者眾多<br>
+                            2. 相同條件且專業能力更優異者<br>
+                            3. 未來就業市場飽和<br>
+                            </font>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="block">
+    </div>
+    <div id="學業成績" class="content wrapper">
+        <div class="col s10 offset-s1  blue darken-1 ">
+            <h5 class="center-align " style="margin-bottom: 0px"><font size="5">學業成績</font></h5>
+        </div>
+        <div class="col s10 offset-s1" style="padding: 0px;">
+            <table class="table table-bordered" style="margin: 0px;">
+                <tbody>
+                    <tr>
+                        <td class="blue lighten-2"><font size="3">學年</font></td>
+                        <td class="blue lighten-2"><font size="3">GPA</font></td>
+                        <td class="blue lighten-2"><font size="3">修習學分</font></td>
+                        <td class="blue lighten-2"><font size="3">修課數</font></td>
+                        <td class="blue lighten-2"><font size="3">名次／班人數</font></td>
+                    </tr>
+                    <tr>
+                        <td>099上</td>
+                        <td>4.19</td>
+                        <td>22</td>
+                        <td>10</td>
+                        <td>1/43</td>
+                    </tr>
+                    <tr>
+                        <td>099下</td>
+                        <td>4.15</td>
+                        <td>20</td>
+                        <td>9</td>
+                        <td>1/42</td>
+                    </tr>
+                    <tr>
+                        <td>100上</td>
+                        <td>4.30</td>
+                        <td>19</td>
+                        <td>8</td>
+                        <td>1/45</td>
+                    </tr>
+                    <tr>
+                        <td>100下</td>
+                        <td>4.26</td>
+                        <td>24</td>
+                        <td>10</td>
+                        <td>1/43</td>
+                    </tr>
+                    <tr>
+                        <td>101上</td>
+                        <td>4.30</td>
+                        <td>16</td>
+                        <td>7</td>
+                        <td>1/42</td>
+                    </tr>
+                    <tr>
+                        <td>101下</td>
+                        <td>4.30</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>1/42</td>
+                    </tr>
+                    <tr>
+                        <td>102上</td>
+                        <td>4.20</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>2/40</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>累計系排名／總人數、累計班排名／總人數、平均 GPA： 1／150、1／50、4.24</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        $(".未來規劃").click(function(){
+            $("content wrapper").hide();
+        });
+        $(".btn2").click(function(){
+            $("p").show();
+        });
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
